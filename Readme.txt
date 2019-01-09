@@ -3,6 +3,7 @@
 資料來源:https://www.raben.com/content/linear-algebra-opencv
 http://pklab.net/?id=380
 https://blog.csdn.net/guduruyu/article/details/72866144
+https://blog.csdn.net/dcrmg/article/details/52404580
 
 矩陣運算
 	矩陣- 加 減 乘 反矩陣

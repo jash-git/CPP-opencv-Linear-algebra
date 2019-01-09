@@ -54,7 +54,32 @@ void subMatrix()
     cout << "B =" << endl << " " << B << endl << endl;
     cout << "A-B =" << endl << " " << C << endl << endl;
 }
+void dotmatrix()
+{
+    //Opencv中.dot操作才算得上是真正的“点乘”，A.dot(B)操作相当于数学向量运算中的点乘，也叫向量的内积、数量积。
+	Mat A=Mat::ones(2,3,CV_8UC1);
+	Mat B=Mat::ones(2,3,CV_8UC1);
 
+	A.at<uchar>(0,0)=1;
+	A.at<uchar>(0,1)=2;
+	A.at<uchar>(0,2)=3;
+	A.at<uchar>(1,0)=4;
+	A.at<uchar>(1,1)=5;
+	A.at<uchar>(1,2)=6;
+
+	B.at<uchar>(0,0)=1;
+	B.at<uchar>(0,1)=2;
+	B.at<uchar>(0,2)=3;
+	B.at<uchar>(1,0)=4;
+	B.at<uchar>(1,1)=5;
+	B.at<uchar>(1,2)=6;
+
+	double AB=A.dot(B);
+
+	cout<<"A=\n"<<A<<endl<<endl;
+	cout<<"B=\n"<<B<<endl<<endl;
+	cout<<"A.B=\t"<<AB<<endl<<endl;
+}
 void matrixMultiplication(){
     float a[2][3] = {{ 3, 1, 2},
                      {-2, 0, 5}};
@@ -227,6 +252,8 @@ int main()
     addMatrix();
     cout << endl << "===================" << endl << endl;
     subMatrix();
+    cout << endl << "===================" << endl << endl;
+    dotmatrix();
     cout << endl << "===================" << endl << endl;
     matrixMultiplication();
     cout << endl << "===================" << endl << endl;
