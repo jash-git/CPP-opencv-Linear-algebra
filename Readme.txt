@@ -2,7 +2,11 @@
 
 資料來源:https://www.raben.com/content/linear-algebra-opencv
 http://pklab.net/?id=380
+https://blog.csdn.net/guduruyu/article/details/72866144
 
 矩陣運算
 	矩陣- 加 減 乘 反矩陣
-	解聯立方程
+	
+解聯立方程
+
+擬合曲線(最小平方 估測)
