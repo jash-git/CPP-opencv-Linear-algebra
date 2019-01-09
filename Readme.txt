@@ -2,3 +2,7 @@
 
 資料來源:https://www.raben.com/content/linear-algebra-opencv
 http://pklab.net/?id=380
+
+矩陣運算
+	矩陣- 加 減 乘 反矩陣
+	解聯立方程
